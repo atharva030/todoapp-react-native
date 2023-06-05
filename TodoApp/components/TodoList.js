@@ -42,7 +42,6 @@ const TodoList = () => {
     setSelected(!selected);
   };
   const handleAddTask = () => {
-    if (newTaskTitle.trim() !== '') {
       const newTask = {
         id: Math.random().toString(),
         title: newTaskTitle,
@@ -54,7 +53,6 @@ const TodoList = () => {
       setNewTaskTitle('');
       setNewTaskDescription('');
       setModalVisible(false);
-    }
   };
 
   const handleClearTasks = () => {
